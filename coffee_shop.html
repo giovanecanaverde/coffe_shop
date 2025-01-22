@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe Menu</title>
+  <style>
+    body {
+      background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center; /* Alinhamento horizontal */
+      align-items: center;   /* Alinhamento vertical */
+    }
+    .menu {
+      width: 80%;            /* Largura ajustável em 80% da largura da tela */
+      max-width: 90%;        /* Limita o tamanho máximo da largura */
+      background-color: burlywood;
+      padding: 5%;           /* Espaçamento interno em relação ao tamanho da `menu` */
+      border-radius: 5%;     /* Bordas arredondadas com proporção */
+      box-shadow: 0 4% 6% rgba(0, 0, 0, 0.3); /* Sombra com valores proporcionais */
+      text-align: center;    /* Centraliza o texto */
+    }
+    .item {
+      display: flex; /* Torna os filhos do <article> flexíveis e permite alinhá-los em linha */
+      justify-content: space-between; /* Adiciona espaço entre o flavor e o price */
+    h1, h2 {
+      margin: 0; /* Remove margens externas */
+    }
+    .flavor {
+      text-align: left; /* Alinha o sabor à esquerda */
+    }
+    .price {
+      text-align: right; /* Alinha o preço à direita */
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <h1>CAMPER CAFE</h1>
+    <p>Est. 2020</p>
+    <section>
+      <h2>Coffee</h2>
+      <article class="item">
+        <p class="flavor">French Vanilla</p>
+        <p class="price">$3.00</p>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
